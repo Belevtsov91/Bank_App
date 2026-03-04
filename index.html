@@ -18,7 +18,15 @@
     <!-- TOP NAVIGATION -->
     <nav>
       <p class="welcome">Log in to get started</p>
-      <img src="logo.png" alt="Logo" class="logo" />
+      <img
+        src="/logo.png"
+        alt="Logo"
+        class="logo"
+        onerror="
+          this.onerror = null;
+          this.src = 'public/logo.png';
+        "
+      />
       <form class="login">
         <input
           type="text"
